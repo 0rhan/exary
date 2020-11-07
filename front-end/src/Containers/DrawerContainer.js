@@ -10,7 +10,7 @@ const mapStateToProps = (state) => state.ui;
 
 const arr = ["Menu", "Edit", "Add"];
 
-function DrawerContainer({ toggleState }) {
+function DrawerContainer({ drawerToggleState }) {
   const listItems = arr.map((item) => (
     <ListItem key={item}>
       <MenuButton>{item}</MenuButton>
@@ -18,7 +18,7 @@ function DrawerContainer({ toggleState }) {
   ));
 
   return (
-    <LeftDrawer toggleState={toggleState}>
+    <LeftDrawer toggleState={drawerToggleState}>
       <DrawerList>{listItems}</DrawerList>
     </LeftDrawer>
   );

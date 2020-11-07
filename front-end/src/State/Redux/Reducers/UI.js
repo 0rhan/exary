@@ -1,19 +1,23 @@
-import { TOGGLE_DRAWER } from "Constants/ActionTypes";
+import { TOGGLE_DRAWER, TOGGLE_MODAL } from "Constants/ActionTypes";
 
 const initialState = {
-  toggleState: false,
+  drawerToggleState: false,
+  modalIsOpen: false,
 };
 
 export default (state = initialState, action) => {
   switch (action.type) {
     case TOGGLE_DRAWER:
-      console.log("DRAWER TOGGLED", state);
       return {
         ...state,
-        toggleState: action.payload,
+        drawerToggleState: action.payload,
+      };
+    case TOGGLE_MODAL:
+      return {
+        ...state,
+        modalIsOpen: action.payload,
       };
     default:
-      console.log("CANT TOGGLE DRAWER", state);
       return state;
   }
 };

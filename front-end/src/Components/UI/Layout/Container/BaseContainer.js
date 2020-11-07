@@ -1,8 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 
-export default ({ children, className }) => (
-  <BaseContainer className={className}>{children}</BaseContainer>
+export default ({ children, className, onClick }) => (
+  <BaseContainer className={className} onClick={onClick}>
+    {children}
+  </BaseContainer>
 );
 
 const BaseContainer = styled.div`

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Dashboard from "Screens/Dashboard";
-import Exercises from "Screens/Exercises";
+import ExercisesContainer from "Containers/ExercisesContainer";
 import About from "Screens/About";
 import { Route, Switch } from "react-router-dom";
 
@@ -14,7 +14,7 @@ export default () => {
             <Dashboard />
           </Route>
           <Route path="/exercises">
-            <Exercises />
+            <ExercisesContainer />
           </Route>
           <Route path="/about">
             <About />

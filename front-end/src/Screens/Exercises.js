@@ -4,6 +4,7 @@ import FloatingButton from "Components/UI/Inputs/FloatingButton";
 import AddIcon from "@material-ui/icons/Add";
 import styled from "styled-components";
 import PreviewCard from "Components/UI/DataDisplay/Card/PreviewCard";
+import Modal from "Components/UI/DataDisplay/Modal/Modal";
 
 let content = [];
 
@@ -13,12 +14,24 @@ for (let i = 0; i < 20; i++) {
   content.push(container);
 }
 
-function Exercises() {
+const open = true;
+const close = false;
+
+function Exercises({ toggleModal, modalIsOpen }) {
   return (
-    <ExercisesContainer>
-      {content}
-      <AddExerciseButton icon={AddIcon} />
-    </ExercisesContainer>
+    <>
+      <Modal
+        label="Add exercise"
+        modalIsOpen={modalIsOpen}
+        onClick={() => toggleModal(close)}
+      >
+        <p>test</p>
+      </Modal>
+      <ExercisesContainer>
+        {content}
+        <AddExerciseButton icon={AddIcon} onClick={() => toggleModal(open)} />
+      </ExercisesContainer>
+    </>
   );
 }
 
@@ -34,5 +47,5 @@ const ExercisesContainer = styled(FullWidthContainer)`
   display: flex;
   flex-direction: column;
   padding-top: 16px;
-  padding-bottom :100px;
-`
+  padding-bottom: 100px;
+`;

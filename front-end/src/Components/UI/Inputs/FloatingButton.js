@@ -3,9 +3,9 @@ import styled from "styled-components"
 import BaseButton from "Components/UI/Inputs/BaseButton/BaseButton"
 import ButtonLabel from "Components/UI/Inputs/BaseButton/ButtonLabel"
 
-function FloatingButton({className, extended=false, label="", icon: Icon}) {
+function FloatingButton({className, extended=false, label="", icon: Icon, onClick}) {
   return (
-    <StyledButton className={className}>
+    <StyledButton className={className} onClick={onClick}>
       <ButtonLabel>
         <Icon/>
         {label}

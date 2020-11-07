@@ -8,12 +8,12 @@ import TopNavigationContainer from "Containers/TopNavigationContainer";
 
 const RootScreen = () => {
   return (
-    <RootScreenContainer>
-      <TopNavigationContainer />
-      <DrawerContainer />
-      <RouteContainer />
-      <BottomNavigation />
-    </RootScreenContainer>
+      <RootScreenContainer>
+        <TopNavigationContainer />
+        <DrawerContainer />
+        <RouteContainer />
+        <BottomNavigation />
+      </RootScreenContainer>
   );
 };
 

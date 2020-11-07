@@ -9,16 +9,19 @@ const mapStateToProps = (state) => state.ui;
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    handleDrawerToggle: (toggleState) => {
-      dispatch(toggleDrawer(toggleState));
+    handleDrawerToggle: (drawerToggleState) => {
+      dispatch(toggleDrawer(drawerToggleState));
     },
   };
 };
 
-const TopNavigationContainer = ({ handleDrawerToggle, toggleState }) => {
+const TopNavigationContainer = ({ handleDrawerToggle, drawerToggleState }) => {
   return (
     <TopBar component="nav">
-      <IconButton icon={MenuIcon} onClick={() => handleDrawerToggle(toggleState)}/>
+      <IconButton
+        icon={MenuIcon}
+        onClick={() => handleDrawerToggle(drawerToggleState)}
+      />
     </TopBar>
   );
 };
