@@ -1,4 +1,4 @@
-import { TOGGLE_DRAWER, TOGGLE_MODAL } from "Constants/ActionTypes";
+import { TOGGLE_DRAWER, TOGGLE_MODAL } from "Constants/Redux/ActionTypes";
 
 const initialState = {
   drawerToggleState: false,

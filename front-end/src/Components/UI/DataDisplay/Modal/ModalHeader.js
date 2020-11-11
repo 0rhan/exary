@@ -3,7 +3,7 @@ import styled from "styled-components";
 import BaseButton from "Components/UI/Inputs/BaseButton/BaseButton";
 import CloseIcon from "@material-ui/icons/Close";
 
-const ModalHeader = ({ children, onClick: closeModal, label }) => {
+const ModalHeader = ({ onClick: closeModal, label }) => {
   const labelUppercase = label.toUpperCase();
   return (
     <Header>

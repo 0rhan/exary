@@ -11,12 +11,12 @@ const ModalOverlay = ({ modalIsOpen, children, onClick: closeModal }) => {
   };
 
   return (
-      <Overlay
-        isOpen={modalIsOpen}
-        onClick={(event) => handleClick(event, closeModal)}
-      >
-        {children}
-      </Overlay>
+    <Overlay
+      isOpen={modalIsOpen}
+      onClick={(event) => handleClick(event, closeModal)}
+    >
+      {children}
+    </Overlay>
   );
 };
 

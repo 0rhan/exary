@@ -5,6 +5,7 @@ import AddIcon from "@material-ui/icons/Add";
 import styled from "styled-components";
 import PreviewCard from "Components/UI/DataDisplay/Card/PreviewCard";
 import Modal from "Components/UI/DataDisplay/Modal/Modal";
+import {OPEN_BOOL, CLOSE_BOOL} from "Constants/UI/UIActions"
 
 let content = [];
 
@@ -14,22 +15,22 @@ for (let i = 0; i < 20; i++) {
   content.push(container);
 }
 
-const open = true;
-const close = false;
 
 function Exercises({ toggleModal, modalIsOpen }) {
   return (
     <>
-      <Modal
-        label="Add exercise"
-        modalIsOpen={modalIsOpen}
-        onClick={() => toggleModal(close)}
-      >
-        <p>test</p>
-      </Modal>
+      {modalIsOpen && (
+        <Modal
+          label="Add exercise"
+          modalIsOpen={modalIsOpen}
+          onClick={() => toggleModal(CLOSE_BOOL)}
+        >
+          <p>test</p> 
+        </Modal>
+      )}
       <ExercisesContainer>
         {content}
-        <AddExerciseButton icon={AddIcon} onClick={() => toggleModal(open)} />
+        <AddExerciseButton icon={AddIcon} onClick={() => toggleModal(OPEN_BOOL)} />
       </ExercisesContainer>
     </>
   );

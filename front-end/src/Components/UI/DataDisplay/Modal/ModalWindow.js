@@ -13,8 +13,7 @@ const ModalWindow = ({ onClick: closeModal, label, children }) => {
   );
 };
 
-
-export default ModalWindow
+export default ModalWindow;
 
 const Window = styled(BaseContainer)`
   color: ${({ theme }) => theme.light.fg};
@@ -23,7 +22,7 @@ const Window = styled(BaseContainer)`
   background-color: ${({ theme }) => theme.light.bg};
   color: ${({ theme }) => theme.light.fg};
   width: 400px;
-  height: 300px;
+  height: auto;
   padding: 20px;
   position: relative;
   flex-direction: column;
