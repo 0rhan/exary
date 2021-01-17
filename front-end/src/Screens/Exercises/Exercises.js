@@ -2,10 +2,11 @@ import React from "react";
 import FullWidthContainer from "Components/UI/Layout/Container/FullWidthContainer";
 import FloatingButton from "Components/UI/Inputs/FloatingButton";
 import AddIcon from "@material-ui/icons/Add";
-import styled from "styled-components";
 import PreviewCard from "Components/UI/DataDisplay/Card/PreviewCard";
 import Modal from "Components/UI/DataDisplay/Modal/Modal";
-import {OPEN_BOOL, CLOSE_BOOL} from "Constants/UI/UIActions"
+import AddExerciseForm from "Screens/Exercises/Modules/AddExercise/AddExerciseForm";
+import { OPEN_BOOL, CLOSE_BOOL } from "Constants/UI/UIActions";
+import styled from "styled-components";
 
 let content = [];
 
@@ -14,7 +15,6 @@ for (let i = 0; i < 20; i++) {
 
   content.push(container);
 }
-
 
 function Exercises({ toggleModal, modalIsOpen }) {
   return (
@@ -25,12 +25,15 @@ function Exercises({ toggleModal, modalIsOpen }) {
           modalIsOpen={modalIsOpen}
           onClick={() => toggleModal(CLOSE_BOOL)}
         >
-          <p>test</p> 
+          <AddExerciseForm />
         </Modal>
       )}
       <ExercisesContainer>
         {content}
-        <AddExerciseButton icon={AddIcon} onClick={() => toggleModal(OPEN_BOOL)} />
+        <AddExerciseButton
+          icon={AddIcon}
+          onClick={() => toggleModal(OPEN_BOOL)}
+        />
       </ExercisesContainer>
     </>
   );

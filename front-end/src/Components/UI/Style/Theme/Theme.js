@@ -1,6 +1,8 @@
 export default {
   light: {
-    bg: "#5B7C45",
-    fg: "#292F1A",
+    bg: "#556f44",
+    bgFaded: "#4e653e",
+    fg: "#242832",
+    fgFaded: "#373c49",
   }
 }

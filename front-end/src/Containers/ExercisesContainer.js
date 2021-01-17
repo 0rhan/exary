@@ -1,5 +1,5 @@
 import React from "react";
-import Exercises from "Screens/Exercises";
+import Exercises from "Screens/Exercises/Exercises";
 import { connect } from "react-redux";
 import { toggleModal } from "State/Redux/Actions";
 
