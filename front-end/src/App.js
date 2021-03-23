@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
-import RootContainer from "Containers/RootContainer";
+import RootContainer from "UI/UIContainers/RootContainer";
 
 function App() {
   return (

@@ -1,7 +1,11 @@
-import reducer from "State/Redux/Reducers/";
-import { createStore } from "redux";
-import { devToolsEnhancer } from "redux-devtools-extension";
+import { configureStore } from "@reduxjs/toolkit";
+import UIReducer from "./Slices/UISlice"
+import exercisesReducer from "./Slices/exercisesSlice"
 
-const store = createStore(reducer, devToolsEnhancer());
-
+const store = configureStore({
+  reducer: {
+    UI: UIReducer,
+    exercises: exercisesReducer,
+  },
+});
 export default store;

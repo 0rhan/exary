@@ -4,10 +4,8 @@ const path = require("path");
 module.exports = override(
   addBabelPlugins("babel-plugin-styled-components"),
   addWebpackAlias({
-    ["Components"]: path.resolve(__dirname, "./src/Components"),
-    ["Constants"]: path.resolve(__dirname, "./src/Constants"),
-    ["Screens"]: path.resolve(__dirname, "./src/Screens"),
+    ["UI"]: path.resolve(__dirname, "./src/UI"),
+    ["Domains"]: path.resolve(__dirname, "./src/Domains"),
     ["State"]: path.resolve(__dirname, "./src/State"),
-    ["Containers"]: path.resolve(__dirname, "./src/Containers"),
   })
 );
