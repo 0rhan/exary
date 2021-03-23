@@ -1,0 +1,22 @@
+services:
+  front-end:
+    build: ./front-end
+    ports:
+        - "80:80"
+    depends_on: 
+        - back-end
+
+  back-end:
+    build: ./back-end
+    restart: always
+    ports: 
+       - "3030:3030"
+    depends_on:
+        - mongodb
+
+  mongodb:
+    image: mongo
+    restart: always
+    container_name: db
+    ports:
+        - "27017:27017"
