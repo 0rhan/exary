@@ -1,6 +1,6 @@
 {
   "name": "exary-front-end",
-  "version": "0.1.0",
+  "version": "0.1.0-alpha",
   "private": true,
   "dependencies": {
     "@fontsource/pt-sans": "^4.1.0",
