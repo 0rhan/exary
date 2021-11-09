@@ -1,6 +1,6 @@
 <h2 align="center">
-  ⚠️ Doesn't production ready.⚠️ 
-  Created for my "educational" and "research" purposes.
+  ⚠️ WIP ⚠️ 
+  Created for educational purposes.
 </h2>
 
 <div align="center">
@@ -8,46 +8,58 @@
   <h3>Exary web app</h3>
 </div>
 
-<p>App for managing and tracking work-out exercises.</p>
+<hr>
 
 <h2>
-  Installation
+  Description
 </h2>
 
-1. open project root directory from terminal
-2. use command `docker-compose  up --build`
-3. open [http://localhost](http://localhost)
+<p>App prototype for managing and tracking work-out exercises.</p>
 
+<p>Made with:</p>
 
-* What functionality is working
+ * React
+ * Redux
+ * Styled
+ * Formik
+ * Webpack
+ * Nodejs
+ * Express
+
+<h2> What functionality is working: </h2>
   * Adding exercises
   * Viewing list of exercises
   * Deleting exercises
 
-<h2> Preview <h2>
+<hr>
+
+<h2>
+  Installation:
+</h2>
+1. open project root directory from terminal
+2. use command `docker-compose  up --build`
+3. open [http://localhost](http://localhost)
+
+<hr>
+
+<h2> Preview: </h2>
 
 <div>
-  <h5>Adding exercise</h5>
-  <img src="https://raw.githubusercontent.com/0rhan/exary-sandbox/master/assets/AddExercise.gif" height="640px"/>
-  <hr>
-
-  <h5>List of exercises<h5>
-  <img src="https://raw.githubusercontent.com/0rhan/exary-sandbox/master/assets/ExercisesList.gif" height="640px"/>
-  <hr>
-
-  <div>
-  <h5>Deleting exercises<h5>
-  <img src="https://raw.githubusercontent.com/0rhan/exary-sandbox/master/assets/DeleteExercises.gif" height="640px"/>
+  <h4>Adding exercise</h4>
+  <img src="https://github.com/0rhan/exary-sandbox/blob/master/assets/AddExercise.gif?raw=true" height="640px"/>
+  <h4>List of exercises</h4>
+  <img src="https://github.com/0rhan/exary-sandbox/blob/master/assets/ExercisesList.gif?raw=true" height="640px"/>
+  <h4>Deleting exercises</h4>
+  <img src="https://github.com/0rhan/exary-sandbox/blob/master/assets/DeleteExercises.gif?raw=true" height="640px"/>
 </div>
 
+<hr>
 
-***
+TO-DO:
 
-TO-DO
 - [ ] Redesign UI/UX
 - [ ] Rewrite to TypeScript
 - [ ] Make app self-hosted (Remove back-end)
 - [ ] Exercises completion statistics
 - [ ] Exercises schedule creation
 - [ ] Dashboard
-
