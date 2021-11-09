@@ -27,6 +27,7 @@
  * Express
 
 <h2> What functionality is working: </h2>
+
   * Adding exercises
   * Viewing list of exercises
   * Deleting exercises
@@ -36,6 +37,7 @@
 <h2>
   Installation:
 </h2>
+
 1. open project root directory from terminal
 2. use command `docker-compose  up --build`
 3. open [http://localhost](http://localhost)
