@@ -1,6 +1,6 @@
 <h2 align="center">
   ⚠️ WIP ⚠️ 
-  Created for educational purposes.
+  Prototype
 </h2>
 
 <div align="center">
